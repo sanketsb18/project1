@@ -7,6 +7,7 @@ class Company {
 }
 
 class eBay extends  Company {
+    @Override
     public void address () {
         System.out.println("This the address of eBay.");
     }
