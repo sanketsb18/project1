@@ -22,5 +22,6 @@ public class MultiThrd1 extends Thread {
         Thread1.start();
         Thread3.start();
         Thread2.join();
+        Thread2.start();
     }
 }
