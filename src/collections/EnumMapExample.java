@@ -18,10 +18,10 @@ class Book {
 
 public class EnumMapExample {
     public enum Key {
-        One, Two, Three;
+        One, Two, Three
     }
     public static void main(String[] args) {
-        EnumMap<Key,Book>map = new EnumMap<Key, Book>(Key.class);
+        EnumMap<Key,Book>map = new EnumMap<>(Key.class);
 
         //creating Books
         Book b1=new Book(1123, "Harry Potter", "J.K. Rowling", "KP Publications", 50,560 );
@@ -33,7 +33,7 @@ public class EnumMapExample {
 
         for(Map.Entry<Key, Book> entry:map.entrySet()) {
             Book b = entry.getValue();
-            System.out.println(b.id + " " + b.name +" " + b.author+ " "+ b.publisher + " " + b.pages + " "+ b.quantity);
+            System.out.println("Id : " +b.id+ " Name : " + b.name +" Author : " + b.author+ " Publisher : "+ b.publisher + " Pages : " + b.pages + " Quantity : "+ b.quantity);
         }
     }
 }
